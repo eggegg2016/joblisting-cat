@@ -1,14 +1,12 @@
-<h1> Edit a job </h1>
+<h1> Edit a Cat </h1>
 
 <%= simple_form_for [:admin, @job ] do |f| %>
 
 <%= f.input :title %>
-<%= f.input :description %>
-<%= f.input :wage_lower_bound, :label => "养猫年预算下限" %>
-<%= f.input :wage_upper_bound, :label => "养猫年预算上限" %>
+<%= f.input :description, :label => " 请描述猫咪的花色、性别、健康状况"%>
+<!-- <%= f.input :wage_lower_bound, :label => "养猫年预算下限" %> -->
+<%= f.input :wage_upper_bound, :label => "猫咪年龄" %>
 <%= f.input :contact_email %>
 <%= f.input :is_hidden %>
-
-
-    <%= f.submit "Submit" %>
+<%= f.submit "Submit" %>
  <% end %>
